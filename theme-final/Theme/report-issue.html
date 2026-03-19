@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signaler un problème — Östral Play</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="Assets/CSS/main.css">
+</head>
+<body>
+<div class="op-legal-page">
+  <header class="op-legal-header">
+    <a href="index.html" class="op-legal-logo"><img src="Assets/Medias/Logos/logo.png" alt="Östral Play"></a>
+    <a href="index.html" class="op-legal-back"><i class="bi bi-arrow-left"></i> Retour</a>
+  </header>
+  <main class="op-legal-main">
+    <h1 class="op-legal-title">Signaler un problème</h1>
+    <p class="op-legal-date">Nous vous répondrons sous 24 heures ouvrables</p>
+
+    <form>
+      <div class="op-form-group">
+        <label class="op-form-label" style="color:#666">Type de problème</label>
+        <div class="d-flex gap-2 flex-wrap">
+          <button type="button" class="op-faq-cat active">Lecture vidéo</button>
+          <button type="button" class="op-faq-cat">Audio</button>
+          <button type="button" class="op-faq-cat">Sous-titres</button>
+          <button type="button" class="op-faq-cat">Connexion</button>
+          <button type="button" class="op-faq-cat">Paiement</button>
+          <button type="button" class="op-faq-cat">Contenu manquant</button>
+          <button type="button" class="op-faq-cat">Autre</button>
+        </div>
+      </div>
+      <div class="op-form-group">
+        <label class="op-form-label" style="color:#666">Contenu concerné (titre)</label>
+        <input type="text" class="op-form-control" style="background:#F5F5F5;border-color:#E0E0E0;color:#1a1a1a" placeholder="Ex : Dark Protocol S2E5">
+      </div>
+      <div class="op-form-group">
+        <label class="op-form-label" style="color:#666">Appareil utilisé</label>
+        <select class="op-form-control op-filter-select" style="background:#F5F5F5;border-color:#E0E0E0;color:#1a1a1a;padding-right:36px;width:100%">
+          <option>Navigateur web (PC/Mac)</option>
+          <option>Smartphone Android</option>
+          <option>iPhone / iPad</option>
+          <option>Smart TV</option>
+          <option>Chromecast</option>
+          <option>Apple TV</option>
+          <option>PlayStation</option>
+          <option>Xbox</option>
+          <option>Autre</option>
+        </select>
+      </div>
+      <div class="op-form-group">
+        <label class="op-form-label" style="color:#666">Description du problème</label>
+        <textarea class="op-form-control" style="background:#F5F5F5;border-color:#E0E0E0;color:#1a1a1a;min-height:160px" placeholder="Décrivez le problème précisément : que s’est-il passé, à quel moment, quelle erreur apparaissait..." maxlength="2000"></textarea>
+        <p class="op-form-helper">0 / 2000 caractères</p>
+      </div>
+      <div class="op-form-group">
+        <label class="op-form-label" style="color:#666">Votre adresse e-mail</label>
+        <input type="email" class="op-form-control" style="background:#F5F5F5;border-color:#E0E0E0;color:#1a1a1a" placeholder="Pour vous répondre">
+      </div>
+      <div class="op-form-group">
+        <label style="display:flex;gap:10px;align-items:flex-start;cursor:pointer">
+          <input type="checkbox" style="margin-top:3px;accent-color:#F7941D">
+          <span style="font-size:13px;color:#555">J’autorise Östral Play à analyser les données techniques de ma session pour diagnostiquer ce problème.</span>
+        </label>
+      </div>
+      <button type="submit" class="op-btn op-btn-primary"><i class="bi bi-flag-fill"></i> Soumettre le signalement</button>
+    </form>
+  </main>
+  <footer class="op-legal-footer">© 2026 Östral Play. Tous droits réservés.</footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="Assets/JS/main.js"></script>
+</body></html>
