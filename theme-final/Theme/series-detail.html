@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Protocol — Östral Play</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="Assets/CSS/main.css">
+</head>
+<body>
+<header id="op-header" class="op-header scrolled">
+  <div class="op-container"><div class="op-header-inner">
+    <a href="index.html" class="op-logo"><img src="Assets/Medias/Logos/logo.png" alt="Östral Play"></a>
+    <nav class="op-nav d-none d-lg-flex"><a href="index.html" class="op-nav-link">Accueil</a><a href="live-tv.html" class="op-nav-link">TV Live</a><a href="movies.html" class="op-nav-link">Films</a><a href="series.html" class="op-nav-link active">Séries</a><a href="my-list.html" class="op-nav-link">Ma Liste</a></nav>
+    <div class="op-header-right"><a href="search.html" class="op-icon-btn"><i class="bi bi-search"></i></a><button class="op-icon-btn d-none d-sm-flex"><i class="bi bi-bell"></i><span class="op-bell-dot"></span></button><a href="profile.html" class="op-avatar">OP</a><button class="op-icon-btn d-lg-none" id="op-mobile-toggle"><i class="bi bi-list" id="op-hamburger-icon"></i></button></div>
+  </div></div>
+</header>
+<div id="op-mobile-menu" class="op-mobile-menu"><nav class="op-mobile-nav"><a href="index.html" class="op-mobile-nav-link"><i class="bi bi-house-fill"></i> Accueil</a><a href="series.html" class="op-mobile-nav-link active"><i class="bi bi-collection-play-fill"></i> Séries</a><a href="movies.html" class="op-mobile-nav-link"><i class="bi bi-film"></i> Films</a></nav></div>
+
+<!-- Detail Hero -->
+<div class="op-detail-hero">
+  <img src="Assets/Medias/Img/slide-2.jpg" alt="Dark Protocol" class="op-detail-bg">
+  <div class="op-detail-overlay"></div>
+  <div class="op-detail-content">
+    <div class="op-container">
+      <div class="d-flex gap-4 align-items-end">
+        <img src="Assets/Medias/Img/poster-6.jpg" alt="Dark Protocol" class="op-detail-poster d-none d-md-block">
+        <div class="op-detail-info">
+          <span class="op-card-badge op-badge-4k mb-3" style="display:inline-block">4K</span>
+          <h1 class="op-detail-title">Dark Protocol</h1>
+          <div class="op-detail-meta">
+            <span class="op-detail-rating"><i class="bi bi-star-fill"></i> 8.8</span>
+            <span class="op-detail-meta-item">2024–2026</span>
+            <span class="op-detail-meta-item">2 Saisons</span>
+            <span class="op-detail-meta-item">16+</span>
+          </div>
+          <div class="d-flex gap-2 flex-wrap mb-4">
+            <span class="op-detail-genre-badge">Thriller</span>
+            <span class="op-detail-genre-badge">Espionnage</span>
+            <span class="op-detail-genre-badge">Action</span>
+          </div>
+          <p class="op-detail-description">Un ex-agent des renseignements découvre un réseau de surveillance clandestine qui touche les plus hautes sphères du pouvoir. Pour survivre, il devra faire confiance aux personnes qu’il espère le moins.</p>
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="episode-player.html" class="op-btn op-btn-primary op-btn-lg"><i class="bi bi-play-fill"></i> Continuer S2E5</a>
+            <button class="op-btn op-btn-secondary"><i class="bi bi-bookmark-plus"></i> Ma Liste</button>
+            <button class="op-btn op-btn-secondary"><i class="bi bi-share"></i> Partager</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main class="op-main" style="padding-top:32px">
+  <div class="op-container">
+    <!-- Episodes -->
+    <h2 class="op-section-title mb-4">Episodes</h2>
+    <div class="op-season-selector">
+      <button class="op-season-btn active" data-season="1">Saison 1</button>
+      <button class="op-season-btn" data-season="2">Saison 2</button>
+    </div>
+
+    <div id="season-1" class="op-episodes-list">
+      <a href="episode-player.html" class="op-episode-item">
+        <img src="Assets/Medias/Img/player-1.jpg" alt="" class="op-episode-thumb">
+        <div>
+          <p class="op-episode-num">S1 — Épisode 1</p>
+          <p class="op-episode-title">Init</p>
+          <p class="op-episode-desc">Lucas Nora reçoit un message crypté qui va bouleverser sa vie tranquille.</p>
+          <p class="op-episode-duration"><i class="bi bi-clock"></i> 48 min</p>
+        </div>
+      </a>
+      <a href="episode-player.html" class="op-episode-item">
+        <img src="Assets/Medias/Img/player-2.jpg" alt="" class="op-episode-thumb">
+        <div>
+          <p class="op-episode-num">S1 — Épisode 2</p>
+          <p class="op-episode-title">Contact</p>
+          <p class="op-episode-desc">La première rencontre avec la taupe au sein du ministère.</p>
+          <p class="op-episode-duration"><i class="bi bi-clock"></i> 52 min</p>
+        </div>
+      </a>
+      <a href="episode-player.html" class="op-episode-item">
+        <img src="Assets/Medias/Img/player-3.jpg" alt="" class="op-episode-thumb">
+        <div>
+          <p class="op-episode-num">S1 — Épisode 3</p>
+          <p class="op-episode-title">Réseau Fantome</p>
+          <p class="op-episode-desc">Le protocole Dark est activé pour la première fois depuis 10 ans.</p>
+          <p class="op-episode-duration"><i class="bi bi-clock"></i> 55 min</p>
+        </div>
+      </a>
+      <a href="episode-player.html" class="op-episode-item">
+        <img src="Assets/Medias/Img/poster-7.jpg" alt="" class="op-episode-thumb">
+        <div>
+          <p class="op-episode-num">S1 — Épisode 4</p>
+          <p class="op-episode-title">Trahison</p>
+          <p class="op-episode-desc">L’identité du chef du réseau commence à se révéler.</p>
+          <p class="op-episode-duration"><i class="bi bi-clock"></i> 50 min</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="season-2" class="op-episodes-list" style="display:none">
+      <a href="episode-player.html" class="op-episode-item">
+        <img src="Assets/Medias/Img/player-2.jpg" alt="" class="op-episode-thumb">
+        <div>
+          <p class="op-episode-num">S2 — Épisode 1</p>
+          <p class="op-episode-title">Reboot</p>
+          <p class="op-episode-desc">Six mois plus tard, Lucas opère depuis un pays étranger sous une nouvelle identité.</p>
+          <p class="op-episode-duration"><i class="bi bi-clock"></i> 54 min</p>
+        </div>
+      </a>
+      <a href="episode-player.html" class="op-episode-item">
+        <img src="Assets/Medias/Img/player-3.jpg" alt="" class="op-episode-thumb">
+        <div>
+          <p class="op-episode-num">S2 — Épisode 5</p>
+          <p class="op-episode-title">La Cage</p>
+          <p class="op-episode-desc">La saison culmine avec une confrontation magistrale dans un bunker souterrain.</p>
+          <p class="op-episode-duration"><i class="bi bi-clock"></i> 62 min</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Series similaires -->
+    <section class="op-section mt-5">
+      <div class="op-section-header"><h2 class="op-section-title">Séries similaires</h2><a href="series.html" class="op-section-link">Voir tout <i class="bi bi-arrow-right"></i></a></div>
+      <div class="op-cards-row">
+        <a href="series-detail.html" class="op-card op-card--portrait"><img src="Assets/Medias/Img/poster-3.jpg" alt="" class="op-card-img"><div class="op-card-overlay"></div><span class="op-card-badge op-badge-new">NEW</span><div class="op-card-play"><div class="op-card-play-btn"><i class="bi bi-play-fill"></i></div></div><div class="op-card-info"><p class="op-card-title">La Dernière Frontière</p><div class="op-card-meta"><i class="bi bi-star-fill star"></i><span>9.2</span><span>•</span><span>S3</span></div></div></a>
+        <a href="series-detail.html" class="op-card op-card--portrait"><img src="Assets/Medias/Img/poster-8.jpg" alt="" class="op-card-img"><div class="op-card-overlay"></div><span class="op-card-badge op-badge-4k">4K</span><div class="op-card-play"><div class="op-card-play-btn"><i class="bi bi-play-fill"></i></div></div><div class="op-card-info"><p class="op-card-title">Code Source</p><div class="op-card-meta"><i class="bi bi-star-fill star"></i><span>9.0</span><span>•</span><span>S4</span></div></div></a>
+        <a href="series-detail.html" class="op-card op-card--portrait"><img src="Assets/Medias/Img/poster-5.jpg" alt="" class="op-card-img"><div class="op-card-overlay"></div><span class="op-card-badge op-badge-hd">HD</span><div class="op-card-play"><div class="op-card-play-btn"><i class="bi bi-play-fill"></i></div></div><div class="op-card-info"><p class="op-card-title">Les Invisibles</p><div class="op-card-meta"><i class="bi bi-star-fill star"></i><span>8.3</span><span>•</span><span>S2</span></div></div></a>
+        <a href="series-detail.html" class="op-card op-card--portrait"><img src="Assets/Medias/Img/poster-2.jpg" alt="" class="op-card-img"><div class="op-card-overlay"></div><span class="op-card-badge op-badge-new">NEW</span><div class="op-card-play"><div class="op-card-play-btn"><i class="bi bi-play-fill"></i></div></div><div class="op-card-info"><p class="op-card-title">Empire</p><div class="op-card-meta"><i class="bi bi-star-fill star"></i><span>7.9</span><span>•</span><span>S1</span></div></div></a>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="op-footer"><div class="op-container"><div class="row g-4"><div class="col-12 col-md-4"><div class="op-footer-logo"><img src="Assets/Medias/Logos/logo.png" alt="Östral Play"></div><p class="op-footer-desc">La plateforme de streaming premium.</p><div class="op-footer-socials"><a href="#" class="op-footer-social"><i class="bi bi-twitter-x"></i></a><a href="#" class="op-footer-social"><i class="bi bi-instagram"></i></a><a href="#" class="op-footer-social"><i class="bi bi-youtube"></i></a></div></div><div class="col-6 col-md-2"><p class="op-footer-col-title">Navigation</p><ul class="op-footer-links"><li><a href="index.html">Accueil</a></li><li><a href="movies.html">Films</a></li><li><a href="series.html">Séries</a></li></ul></div><div class="col-6 col-md-3"><p class="op-footer-col-title">Support</p><ul class="op-footer-links"><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="col-6 col-md-3"><p class="op-footer-col-title">Légal</p><ul class="op-footer-links"><li><a href="terms.html">Conditions</a></li><li><a href="privacy.html">Confidentialité</a></li></ul></div></div><div class="op-footer-bottom"><p class="op-footer-copy">© 2026 Östral Play.</p><div class="op-footer-langs"><button class="op-footer-lang active">Français</button><button class="op-footer-lang">English</button></div></div></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="Assets/JS/main.js"></script>
+</body></html>

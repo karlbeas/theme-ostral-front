@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Séries — Östral Play</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="Assets/CSS/main.css">
+</head>
+<body>
+<header id="op-header" class="op-header">
+  <div class="op-container"><div class="op-header-inner">
+    <a href="index.html" class="op-logo"><img src="Assets/Medias/Logos/logo.png" alt="Östral Play"></a>
+    <nav class="op-nav d-none d-lg-flex">
+      <a href="index.html" class="op-nav-link">Accueil</a><a href="live-tv.html" class="op-nav-link">TV Live</a><a href="movies.html" class="op-nav-link">Films</a><a href="series.html" class="op-nav-link active">Séries</a><a href="my-list.html" class="op-nav-link">Ma Liste</a>
+    </nav>
+    <div class="op-header-right">
+      <a href="search.html" class="op-icon-btn"><i class="bi bi-search"></i></a>
+      <button class="op-icon-btn d-none d-sm-flex"><i class="bi bi-bell"></i><span class="op-bell-dot"></span></button>
+      <a href="profile.html" class="op-avatar">OP</a>
+      <button class="op-icon-btn d-lg-none" id="op-mobile-toggle"><i class="bi bi-list" id="op-hamburger-icon"></i></button>
+    </div>
+  </div></div>
+</header>
+<div id="op-mobile-menu" class="op-mobile-menu">
+  <nav class="op-mobile-nav">
+    <a href="index.html" class="op-mobile-nav-link"><i class="bi bi-house-fill"></i> Accueil</a>
+    <a href="series.html" class="op-mobile-nav-link active"><i class="bi bi-collection-play-fill"></i> Séries</a>
+    <a href="movies.html" class="op-mobile-nav-link"><i class="bi bi-film"></i> Films</a>
+    <a href="my-list.html" class="op-mobile-nav-link"><i class="bi bi-bookmark-fill"></i> Ma Liste</a>
+  </nav>
+</div>
+<main class="op-page">
+  <div class="op-page-header"><div class="op-container">
+    <h1 class="op-page-title">Séries</h1>
+    <p class="op-page-sub">Les meilleures séries originales et exclusives</p>
+  </div></div>
+  <div class="op-container">
+    <div class="op-filters">
+      <button class="op-filter-btn active">Toutes</button>
+      <button class="op-filter-btn">Drama</button>
+      <button class="op-filter-btn">Thriller</button>
+      <button class="op-filter-btn">Sci-Fi</button>
+      <button class="op-filter-btn">Comédie</button>
+      <button class="op-filter-btn">Crime</button>
+      <button class="op-filter-btn">Fantastique</button>
+      <select class="op-filter-select ms-auto">
+        <option>Trier : Popularité</option><option>Trier : Note</option><option>Trier : Année</option>
+      </select>
+      <div class="op-view-toggle">
+        <button class="op-view-btn active" data-view="grid" data-target="#series-grid"><i class="bi bi-grid-fill"></i></button>
+        <button class="op-view-btn" data-view="list" data-target="#series-grid"><i class="bi bi-list-ul"></i></button>
+      </div>
+    </div>
+    <div class="op-grid" id="series-grid">
+      <a href="series-detail.html" class="op-card"><img src="Assets/Medias/Img/poster-3.jpg" alt="La Dernière Frontière" class="op-card-img"><div class="op-card-overlay"></div><span class="op-card-badge op-badge-new">NEW</span><button class="op-card-like"><i class="bi bi-heart"></i></button><div class="op-card-play"><div class="op-card-play-btn"><i class="bi bi-play-fill"></i></div></div><div class="op-card-info"><p class="op-card-title">La Dernière Frontière</p><div class="op-card-meta"><i class="bi bi-star-fill star"></i><span>9.2</span><span>•</span><span>S3</span></div></div></a>
+      <a href="series-detail.html" class="op-card"><img src="Assets/Medias/Img/poster-6.jpg" alt="Dark Protocol" class="op-card-img"><div class="op-card-overlay"></div><span class="op-card-badge op-badge-4k">4K</span><button class="op-card-like"><i class="bi bi-heart"></i></button><div class="op-card-play"><div class="op-card-play-btn"><i class="bi bi-play-fill"></i></div></div><div class="op-card-info"><p class="op-card-title">Dark Protocol</p><div class="op-card-meta"><i class="bi bi-star-fill star"></i><span>8.8</span><span>•</span><span>S2</span></div></div></a>
+      <a href="series-detail.html" class="op-card"><img src="Assets/Medias/Img/poster-9.jpg" alt="Chronique Urbaine" class="op-card-img"><div class="op-card-overlay"></div><span class="op-card-badge op-badge-hd">HD</span><button class="op-card-like"><i class="bi bi-heart"></i></button><div class="op-card-play"><div class="op-card-play-btn"><i class="bi bi-play-fill"></i></div></div><div class="op-card-info"><p class="op-card-title">Chronique Urbaine</p><div class="op-card-meta"><i class="bi bi-star-fill star"></i><span>8.1</span><span>•</span><span>S5</span></div></div></a>
+      <a href="series-detail.html" class="op-card"><img src="Assets/Medias/Img/poster-2.jpg" alt="Empire" class="op-card-img"><div class="op-card-overlay"></div><span class="op-card-badge op-badge-new">NEW</span><button class="op-card-like"><i class="bi bi-heart"></i></button><div class="op-card-play"><div class="op-card-play-btn"><i class="bi bi-play-fill"></i></div></div><div class="op-card-info"><p class="op-card-title">Empire</p><div class="op-card-meta"><i class="bi bi-star-fill star"></i><span>7.9</span><span>•</span><span>S1</span></div></div></a>
+      <a href="series-detail.html" class="op-card"><img src="Assets/Medias/Img/poster-5.jpg" alt="Les Invisibles" class="op-card-img"><div class="op-card-overlay"></div><span class="op-card-badge op-badge-hd">HD</span><button class="op-card-like"><i class="bi bi-heart"></i></button><div class="op-card-play"><div class="op-card-play-btn"><i class="bi bi-play-fill"></i></div></div><div class="op-card-info"><p class="op-card-title">Les Invisibles</p><div class="op-card-meta"><i class="bi bi-star-fill star"></i><span>8.3</span><span>•</span><span>S2</span></div></div></a>
+      <a href="series-detail.html" class="op-card"><img src="Assets/Medias/Img/poster-8.jpg" alt="Code Source" class="op-card-img"><div class="op-card-overlay"></div><span class="op-card-badge op-badge-4k">4K</span><button class="op-card-like"><i class="bi bi-heart"></i></button><div class="op-card-play"><div class="op-card-play-btn"><i class="bi bi-play-fill"></i></div></div><div class="op-card-info"><p class="op-card-title">Code Source</p><div class="op-card-meta"><i class="bi bi-star-fill star"></i><span>9.0</span><span>•</span><span>S4</span></div></div></a>
+      <a href="series-detail.html" class="op-card"><img src="Assets/Medias/Img/poster-10.jpg" alt="Meridian" class="op-card-img"><div class="op-card-overlay"></div><span class="op-card-badge op-badge-new">NEW</span><button class="op-card-like"><i class="bi bi-heart"></i></button><div class="op-card-play"><div class="op-card-play-btn"><i class="bi bi-play-fill"></i></div></div><div class="op-card-info"><p class="op-card-title">Meridian</p><div class="op-card-meta"><i class="bi bi-star-fill star"></i><span>7.6</span><span>•</span><span>S1</span></div></div></a>
+      <a href="series-detail.html" class="op-card"><img src="Assets/Medias/Img/poster-11.jpg" alt="La Chute" class="op-card-img"><div class="op-card-overlay"></div><span class="op-card-badge op-badge-hd">HD</span><button class="op-card-like"><i class="bi bi-heart"></i></button><div class="op-card-play"><div class="op-card-play-btn"><i class="bi bi-play-fill"></i></div></div><div class="op-card-info"><p class="op-card-title">La Chute</p><div class="op-card-meta"><i class="bi bi-star-fill star"></i><span>8.4</span><span>•</span><span>S2</span></div></div></a>
+      <a href="series-detail.html" class="op-card"><img src="Assets/Medias/Img/poster-1.jpg" alt="Vortex" class="op-card-img"><div class="op-card-overlay"></div><span class="op-card-badge op-badge-4k">4K</span><button class="op-card-like"><i class="bi bi-heart"></i></button><div class="op-card-play"><div class="op-card-play-btn"><i class="bi bi-play-fill"></i></div></div><div class="op-card-info"><p class="op-card-title">Vortex</p><div class="op-card-meta"><i class="bi bi-star-fill star"></i><span>8.6</span><span>•</span><span>S3</span></div></div></a>
+      <a href="series-detail.html" class="op-card"><img src="Assets/Medias/Img/poster-4.jpg" alt="Nexus" class="op-card-img"><div class="op-card-overlay"></div><button class="op-card-like"><i class="bi bi-heart"></i></button><div class="op-card-play"><div class="op-card-play-btn"><i class="bi bi-play-fill"></i></div></div><div class="op-card-info"><p class="op-card-title">Nexus</p><div class="op-card-meta"><i class="bi bi-star-fill star"></i><span>7.8</span><span>•</span><span>S1</span></div></div></a>
+      <a href="series-detail.html" class="op-card"><img src="Assets/Medias/Img/poster-7.jpg" alt="Halo Effect" class="op-card-img"><div class="op-card-overlay"></div><span class="op-card-badge op-badge-new">NEW</span><button class="op-card-like"><i class="bi bi-heart"></i></button><div class="op-card-play"><div class="op-card-play-btn"><i class="bi bi-play-fill"></i></div></div><div class="op-card-info"><p class="op-card-title">Halo Effect</p><div class="op-card-meta"><i class="bi bi-star-fill star"></i><span>8.0</span><span>•</span><span>S1</span></div></div></a>
+    </div>
+    <div class="d-flex justify-content-center gap-2 mt-5 mb-3">
+      <button class="op-btn op-btn-secondary" style="width:40px;height:40px;padding:0;justify-content:center"><i class="bi bi-chevron-left"></i></button>
+      <button class="op-btn op-btn-primary" style="width:40px;height:40px;padding:0;justify-content:center">1</button>
+      <button class="op-btn op-btn-secondary" style="width:40px;height:40px;padding:0;justify-content:center">2</button>
+      <button class="op-btn op-btn-secondary" style="width:40px;height:40px;padding:0;justify-content:center"><i class="bi bi-chevron-right"></i></button>
+    </div>
+  </div>
+</main>
+<footer class="op-footer"><div class="op-container"><div class="row g-5"><div class="col-12 col-md-4 col-lg-3"><div class="op-footer-logo"><img src="Assets/Medias/Logos/logo.png" alt="Östral Play"></div><p class="op-footer-desc">La plateforme de streaming premium.</p><div class="op-footer-socials"><a href="#" class="op-footer-social"><i class="bi bi-twitter-x"></i></a><a href="#" class="op-footer-social"><i class="bi bi-instagram"></i></a><a href="#" class="op-footer-social"><i class="bi bi-youtube"></i></a><a href="#" class="op-footer-social"><i class="bi bi-facebook"></i></a></div></div><div class="col-6 col-md-2"><p class="op-footer-col-title">Navigation</p><ul class="op-footer-links"><li><a href="index.html">Accueil</a></li><li><a href="movies.html">Films</a></li><li><a href="series.html">Séries</a></li><li><a href="live-tv.html">TV Live</a></li></ul></div><div class="col-6 col-md-3"><p class="op-footer-col-title">Support</p><ul class="op-footer-links"><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li><li><a href="help-center.html">Centre d'aide</a></li></ul></div><div class="col-6 col-md-3"><p class="op-footer-col-title">Légal</p><ul class="op-footer-links"><li><a href="terms.html">Conditions</a></li><li><a href="privacy.html">Confidentialité</a></li><li><a href="legal.html">Mentions légales</a></li></ul></div></div><div class="op-footer-bottom"><p class="op-footer-copy">© 2026 Östral Play.</p><div class="op-footer-langs"><button class="op-footer-lang active">Français</button><button class="op-footer-lang">English</button></div></div></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="Assets/JS/main.js"></script>
+</body></html>
