@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Films — Östral Play</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="Assets/CSS/main.css">
+</head>
+<body>
+
+<header id="op-header" class="op-header">
+  <div class="op-container"><div class="op-header-inner">
+    <a href="index.html" class="op-logo"><img src="Assets/Medias/Logos/logo.png" alt="Östral Play"></a>
+    <nav class="op-nav d-none d-lg-flex">
+      <a href="index.html" class="op-nav-link">Accueil</a>
+      <a href="live-tv.html" class="op-nav-link">TV Live</a>
+      <a href="movies.html" class="op-nav-link active">Films</a>
+      <a href="series.html" class="op-nav-link">Séries</a>
+      <a href="my-list.html" class="op-nav-link">Ma Liste</a>
+    </nav>
+    <div class="op-header-right">
+      <a href="search.html" class="op-icon-btn"><i class="bi bi-search"></i></a>
+      <button class="op-icon-btn d-none d-sm-flex"><i class="bi bi-bell"></i><span class="op-bell-dot"></span></button>
+      <a href="profile.html" class="op-avatar">OP</a>
+      <button class="op-icon-btn d-lg-none" id="op-mobile-toggle"><i class="bi bi-list" id="op-hamburger-icon"></i></button>
+    </div>
+  </div></div>
+</header>
+<div id="op-mobile-menu" class="op-mobile-menu">
+  <nav class="op-mobile-nav">
+    <a href="index.html" class="op-mobile-nav-link"><i class="bi bi-house-fill"></i> Accueil</a>
+    <a href="live-tv.html" class="op-mobile-nav-link"><i class="bi bi-tv-fill"></i> TV Live</a>
+    <a href="movies.html" class="op-mobile-nav-link active"><i class="bi bi-film"></i> Films</a>
+    <a href="series.html" class="op-mobile-nav-link"><i class="bi bi-collection-play-fill"></i> Séries</a>
+    <a href="my-list.html" class="op-mobile-nav-link"><i class="bi bi-bookmark-fill"></i> Ma Liste</a>
+    <hr class="op-mobile-divider">
+    <a href="profile.html" class="op-mobile-nav-link"><i class="bi bi-person-fill"></i> Mon Profil</a>
+  </nav>
+</div>
+
+<main class="op-page">
+  <div class="op-page-header">
+    <div class="op-container">
+      <h1 class="op-page-title">Films</h1>
+      <p class="op-page-sub">Découvrez notre catalogue de films en 4K, HD et SD</p>
+    </div>
+  </div>
+
+  <div class="op-container">
+    <!-- Filtres -->
+    <div class="op-filters">
+      <button class="op-filter-btn active">Tous</button>
+      <button class="op-filter-btn">Action</button>
+      <button class="op-filter-btn">Thriller</button>
+      <button class="op-filter-btn">Science-Fiction</button>
+      <button class="op-filter-btn">Drama</button>
+      <button class="op-filter-btn">Comédie</button>
+      <button class="op-filter-btn">Horreur</button>
+      <button class="op-filter-btn">Animation</button>
+      <select class="op-filter-select ms-auto">
+        <option>Trier par : Popularité</option>
+        <option>Trier par : Note</option>
+        <option>Trier par : Année</option>
+        <option>Trier par : Titre A-Z</option>
+      </select>
+      <div class="op-view-toggle">
+        <button class="op-view-btn active" data-view="grid" data-target="#movies-grid"><i class="bi bi-grid-fill"></i></button>
+        <button class="op-view-btn" data-view="list" data-target="#movies-grid"><i class="bi bi-list-ul"></i></button>
+      </div>
+    </div>
+
+    <!-- Grid de films -->
+    <div class="op-grid" id="movies-grid">
+      <a href="movie-detail.html" class="op-card"><img src="Assets/Medias/Img/poster-1.jpg" alt="Nuits Polaires" class="op-card-img"><div class="op-card-overlay"></div><span class="op-card-badge op-badge-4k">4K</span><button class="op-card-like"><i class="bi bi-heart"></i></button><div class="op-card-play"><div class="op-card-play-btn"><i class="bi bi-play-fill"></i></div></div><div class="op-card-info"><p class="op-card-title">Nuits Polaires</p><div class="op-card-meta"><i class="bi bi-star-fill star"></i><span>8.4</span><span>•</span><span>2026</span></div></div></a>
+      <a href="movie-detail.html" class="op-card"><img src="Assets/Medias/Img/poster-2.jpg" alt="L'Empire du Silence" class="op-card-img"><div class="op-card-overlay"></div><span class="op-card-badge op-badge-hd">HD</span><button class="op-card-like"><i class="bi bi-heart"></i></button><div class="op-card-play"><div class="op-card-play-btn"><i class="bi bi-play-fill"></i></div></div><div class="op-card-info"><p class="op-card-title">L’Empire du Silence</p><div class="op-card-meta"><i class="bi bi-star-fill star"></i><span>9.1</span><span>•</span><span>2025</span></div></div></a>
+      <a href="movie-detail.html" class="op-card"><img src="Assets/Medias/Img/poster-3.jpg" alt="Horizon Sauvage" class="op-card-img"><div class="op-card-overlay"></div><span class="op-card-badge op-badge-new">NEW</span><button class="op-card-like"><i class="bi bi-heart"></i></button><div class="op-card-play"><div class="op-card-play-btn"><i class="bi bi-play-fill"></i></div></div><div class="op-card-info"><p class="op-card-title">Horizon Sauvage</p><div class="op-card-meta"><i class="bi bi-star-fill star"></i><span>7.5</span><span>•</span><span>2026</span></div></div></a>
+      <a href="movie-detail.html" class="op-card"><img src="Assets/Medias/Img/poster-4.jpg" alt="La Forteresse" class="op-card-img"><div class="op-card-overlay"></div><span class="op-card-badge op-badge-4k">4K</span><button class="op-card-like"><i class="bi bi-heart"></i></button><div class="op-card-play"><div class="op-card-play-btn"><i class="bi bi-play-fill"></i></div></div><div class="op-card-info"><p class="op-card-title">La Forteresse</p><div class="op-card-meta"><i class="bi bi-star-fill star"></i><span>8.7</span><span>•</span><span>2024</span></div></div></a>
+      <a href="movie-detail.html" class="op-card"><img src="Assets/Medias/Img/poster-5.jpg" alt="Neon Dreams" class="op-card-img"><div class="op-card-overlay"></div><span class="op-card-badge op-badge-hd">HD</span><button class="op-card-like"><i class="bi bi-heart"></i></button><div class="op-card-play"><div class="op-card-play-btn"><i class="bi bi-play-fill"></i></div></div><div class="op-card-info"><p class="op-card-title">Neon Dreams</p><div class="op-card-meta"><i class="bi bi-star-fill star"></i><span>7.9</span><span>•</span><span>2025</span></div></div></a>
+      <a href="movie-detail.html" class="op-card"><img src="Assets/Medias/Img/poster-6.jpg" alt="Le Prix du Sang" class="op-card-img"><div class="op-card-overlay"></div><span class="op-card-badge op-badge-new">NEW</span><button class="op-card-like"><i class="bi bi-heart"></i></button><div class="op-card-play"><div class="op-card-play-btn"><i class="bi bi-play-fill"></i></div></div><div class="op-card-info"><p class="op-card-title">Le Prix du Sang</p><div class="op-card-meta"><i class="bi bi-star-fill star"></i><span>8.2</span><span>•</span><span>2026</span></div></div></a>
+      <a href="movie-detail.html" class="op-card"><img src="Assets/Medias/Img/poster-7.jpg" alt="Au-delà du Temps" class="op-card-img"><div class="op-card-overlay"></div><span class="op-card-badge op-badge-4k">4K</span><button class="op-card-like"><i class="bi bi-heart"></i></button><div class="op-card-play"><div class="op-card-play-btn"><i class="bi bi-play-fill"></i></div></div><div class="op-card-info"><p class="op-card-title">Au-delà du Temps</p><div class="op-card-meta"><i class="bi bi-star-fill star"></i><span>8.9</span><span>•</span><span>2025</span></div></div></a>
+      <a href="movie-detail.html" class="op-card"><img src="Assets/Medias/Img/poster-8.jpg" alt="Opération Phoenix" class="op-card-img"><div class="op-card-overlay"></div><span class="op-card-badge op-badge-hd">HD</span><button class="op-card-like"><i class="bi bi-heart"></i></button><div class="op-card-play"><div class="op-card-play-btn"><i class="bi bi-play-fill"></i></div></div><div class="op-card-info"><p class="op-card-title">Opération Phoenix</p><div class="op-card-meta"><i class="bi bi-star-fill star"></i><span>7.6</span><span>•</span><span>2024</span></div></div></a>
+      <a href="movie-detail.html" class="op-card"><img src="Assets/Medias/Img/poster-9.jpg" alt="Les Ombres" class="op-card-img"><div class="op-card-overlay"></div><button class="op-card-like"><i class="bi bi-heart"></i></button><div class="op-card-play"><div class="op-card-play-btn"><i class="bi bi-play-fill"></i></div></div><div class="op-card-info"><p class="op-card-title">Les Ombres</p><div class="op-card-meta"><i class="bi bi-star-fill star"></i><span>8.0</span><span>•</span><span>2026</span></div></div></a>
+      <a href="movie-detail.html" class="op-card"><img src="Assets/Medias/Img/poster-10.jpg" alt="Chroniques" class="op-card-img"><div class="op-card-overlay"></div><span class="op-card-badge op-badge-new">NEW</span><button class="op-card-like"><i class="bi bi-heart"></i></button><div class="op-card-play"><div class="op-card-play-btn"><i class="bi bi-play-fill"></i></div></div><div class="op-card-info"><p class="op-card-title">Chroniques</p><div class="op-card-meta"><i class="bi bi-star-fill star"></i><span>7.3</span><span>•</span><span>2025</span></div></div></a>
+      <a href="movie-detail.html" class="op-card"><img src="Assets/Medias/Img/poster-11.jpg" alt="Dernier Acte" class="op-card-img"><div class="op-card-overlay"></div><span class="op-card-badge op-badge-hd">HD</span><button class="op-card-like"><i class="bi bi-heart"></i></button><div class="op-card-play"><div class="op-card-play-btn"><i class="bi bi-play-fill"></i></div></div><div class="op-card-info"><p class="op-card-title">Dernier Acte</p><div class="op-card-meta"><i class="bi bi-star-fill star"></i><span>8.5</span><span>•</span><span>2026</span></div></div></a>
+      <a href="movie-detail.html" class="op-card"><img src="Assets/Medias/Img/poster-1.jpg" alt="" class="op-card-img"><div class="op-card-overlay"></div><span class="op-card-badge op-badge-4k">4K</span><button class="op-card-like"><i class="bi bi-heart"></i></button><div class="op-card-play"><div class="op-card-play-btn"><i class="bi bi-play-fill"></i></div></div><div class="op-card-info"><p class="op-card-title">Minuit à Paris</p><div class="op-card-meta"><i class="bi bi-star-fill star"></i><span>8.1</span><span>•</span><span>2025</span></div></div></a>
+    </div>
+
+    <!-- Pagination -->
+    <div class="d-flex justify-content-center gap-2 mt-5 mb-3">
+      <button class="op-btn op-btn-secondary" style="width:40px;height:40px;padding:0;justify-content:center"><i class="bi bi-chevron-left"></i></button>
+      <button class="op-btn op-btn-primary" style="width:40px;height:40px;padding:0;justify-content:center">1</button>
+      <button class="op-btn op-btn-secondary" style="width:40px;height:40px;padding:0;justify-content:center">2</button>
+      <button class="op-btn op-btn-secondary" style="width:40px;height:40px;padding:0;justify-content:center">3</button>
+      <button class="op-btn op-btn-secondary" style="width:40px;height:40px;padding:0;justify-content:center"><i class="bi bi-chevron-right"></i></button>
+    </div>
+  </div>
+</main>
+
+<footer class="op-footer">
+  <div class="op-container">
+    <div class="row g-5">
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="op-footer-logo"><img src="Assets/Medias/Logos/logo.png" alt="Östral Play"></div>
+        <p class="op-footer-desc">La plateforme de streaming premium qui réunit films, séries et TV live en un seul endroit.</p>
+        <div class="op-footer-socials">
+          <a href="#" class="op-footer-social"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="op-footer-social"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="op-footer-social"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="op-footer-social"><i class="bi bi-facebook"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-md-2"><p class="op-footer-col-title">Navigation</p><ul class="op-footer-links"><li><a href="index.html">Accueil</a></li><li><a href="live-tv.html">TV Live</a></li><li><a href="movies.html">Films</a></li><li><a href="series.html">Séries</a></li><li><a href="my-list.html">Ma Liste</a></li></ul></div>
+      <div class="col-6 col-md-3"><p class="op-footer-col-title">Support</p><ul class="op-footer-links"><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li><li><a href="help-center.html">Centre d'aide</a></li><li><a href="report-issue.html">Signaler un problème</a></li><li><a href="accessibility.html">Accessibilité</a></li></ul></div>
+      <div class="col-6 col-md-3"><p class="op-footer-col-title">Légal</p><ul class="op-footer-links"><li><a href="terms.html">Conditions d'utilisation</a></li><li><a href="privacy.html">Politique de confidentialité</a></li><li><a href="legal.html">Mentions légales</a></li><li><a href="about.html">À propos</a></li><li><a href="press.html">Presse</a></li></ul></div>
+    </div>
+    <div class="op-footer-bottom">
+      <p class="op-footer-copy">© 2026 Östral Play. Tous droits réservés.</p>
+      <div class="op-footer-langs"><button class="op-footer-lang active">Français</button><button class="op-footer-lang">English</button><button class="op-footer-lang">العربية</button></div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="Assets/JS/main.js"></script>
+</body>
+</html>
